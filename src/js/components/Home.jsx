@@ -8,12 +8,12 @@ import Card from "./Card.jsx"
 import Cardmenu from "./Cardmenu.jsx"
 
 //create your first component
-const Home = () => {
+const Home = (props) => {
 	//array de objetos con la informacion del menu 
 	const recetas = [
-		{nombre:"pasta", descripcion:"comida italiana tradicional"},
-		{nombre:"sopa", descripcion:"plata nutritivo caliente"},
-		{nombre:"ensalada", descripcion:"ensalada de tomate" }
+		{ nombre: "pasta", descripcion: "comida italiana tradicional" },
+		{ nombre: "sopa", descripcion: "plata nutritivo caliente" },
+		{ nombre: "ensalada", descripcion: "ensalada de tomate" }
 	]
 
 	return (
@@ -43,22 +43,28 @@ const Home = () => {
 			</p> */}
 
 
+
 			<h2>Clase 2 PROPS</h2>
+
 			<h2>Menu </h2>
 			{/* <Cardmenu nombre="pasta" descripcion="comida italiana tradicional" />
 			<Cardmenu nombre="sopa" descripcion="plata nutritivo caliente" /> */}
 
 
 			{/* usando map para mostrar las cartas del menu  */}
-			{recetas.map((item, index) =>( 
+			{recetas.map((item, index) => (
 				//la prop key es obligatoria en REACT 
-				<Cardmenu  key={index} nombre={item.nombre} descripcion={item.descripcion} />
+				<Cardmenu key={index} nombre={item.nombre} descripcion={item.descripcion} />
 			))}
-			
 
 
+			<h2>Contador </h2>
 
+			<div className="row">
 
+				<div className="col">{props.digitTwo}</div>
+				<div className="col">{props.digitOne}</div>
+			</div>
 
 		</div>
 	);

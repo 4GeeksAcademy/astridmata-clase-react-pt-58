@@ -11,8 +11,27 @@ import '../styles/index.css'
 // components
 import Home from './components/Home';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+let root = ReactDOM.createRoot(document.getElementById('root'));
+
+let contador = 0
+setInterval(()=>{
+
+let two = Math.floor((contador/10)%10) //segundo digito
+let one = Math.floor((contador/1)%10) //primer digito
+
+contador++;
+
+
+root.render(
   <React.StrictMode>
-    <Home/>
+    {/* paso la informacion por props a Home */}
+    <Home digitOne={one} digitTwo={two} /> 
   </React.StrictMode>,
 )
+
+
+},1000)
+
+
+
+
