@@ -6,6 +6,8 @@ import Navbar from "./Navbar.jsx"  //importo el componente
 import { Acordeon } from "./Acordeon.jsx"
 import Card from "./Card.jsx"
 import Cardmenu from "./Cardmenu.jsx"
+import {Hooks} from "./Hooks.jsx" 
+
 
 //create your first component
 const Home = (props) => {
@@ -66,7 +68,14 @@ const Home = (props) => {
 				<div className="col">{props.digitOne}</div>
 			</div>
 
+
+
+			<div>
+				<h2> Clase Hooks</h2>
+				<Hooks/>
+			</div>
 		</div>
+
 	);
 };
 
