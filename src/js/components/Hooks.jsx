@@ -31,9 +31,9 @@ let incrementar =()=>{
 }
 
 
-// console.log(useState());
 
-    //  let frutas = [ "fresa", "uva"]
+
+   
 
     return(
         <>

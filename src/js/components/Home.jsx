@@ -7,6 +7,7 @@ import { Acordeon } from "./Acordeon.jsx"
 import Card from "./Card.jsx"
 import Cardmenu from "./Cardmenu.jsx"
 import {Hooks} from "./Hooks.jsx" 
+import Form from "./Form.jsx";
 
 
 //create your first component
@@ -73,6 +74,11 @@ const Home = (props) => {
 			<div>
 				<h2> Clase Hooks</h2>
 				<Hooks/>
+			</div>
+
+			<div>
+				<Form/>
+
 			</div>
 		</div>
 
