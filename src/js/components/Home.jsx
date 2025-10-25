@@ -2,13 +2,14 @@ import React from "react";
 
 //include images into your bundle
 
-import Navbar from "./Navbar.jsx"  //importo el componente 
-import { Acordeon } from "./Acordeon.jsx"
-import Card from "./Card.jsx"
-import Cardmenu from "./Cardmenu.jsx"
-import {Hooks} from "./Hooks.jsx" 
+import Navbar from "./Navbar.jsx";  //importo el componente 
+import { Acordeon } from "./Acordeon.jsx";
+import Card from "./Card.jsx";
+import Cardmenu from "./Cardmenu.jsx";
+import {Hooks} from "./Hooks.jsx"; 
 import Form from "./Form.jsx";
 import Rick from "./Rick.jsx";
+import Todoapi from "./Todoapi.jsx";
 
 //create your first component
 const Home = (props) => {
@@ -83,6 +84,11 @@ const Home = (props) => {
 
 			<div>
 				<Rick/>
+
+			</div>
+
+			<div>
+				<Todoapi/>
 
 			</div>
 		</div>
